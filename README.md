@@ -155,7 +155,7 @@ La paleta se define con **variables CSS** en `:root`, por lo que se puede cambia
 
 **Opción 2: clonar con Git**
 ```bash
-git clone https://github.com/TU-USUARIO/login-adminexpress.git
+git clone https://github.com/YueAinhoa/login-adminexpress.git
 cd login-adminexpress
 ```
 Luego abre `index.html`, o usa la extensión **Live Server** de VS Code (clic derecho → *Open with Live Server*).
@@ -175,10 +175,9 @@ Luego abre `index.html`, o usa la extensión **Live Server** de VS Code (clic de
 
 ## 12. Autor
 
-**Tu Nombre Completo**
+**YueAinhoa**
 Curso: *(nombre de la materia)*
 Docente: *(nombre del profesor)*
 Fecha: *(fecha de entrega)*
 
-📧 tu-correo@ejemplo.com
-🐙 [github.com/TU-USUARIO](https://github.com/TU-USUARIO)
+🐙 [github.com/YueAinhoa](https://github.com/YueAinhoa)
