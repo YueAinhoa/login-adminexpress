@@ -132,11 +132,11 @@ La paleta se define con **variables CSS** en `:root`, por lo que se puede cambia
 
 | Uso | Variable | Color |
 |---|---|---|
-| Rosa principal (panel, botón, enlaces) | `--blue` | `#c2185b` |
-| Rosa hover del botón | — | `#a01049` |
-| Texto principal (vino) | `--navy` | `#4a0e2e` |
-| Texto secundario | `--gray` | `#8a6b7a` |
-| Fondo | `--bg` | `#fdf4f7` |
+| Rosa principal (panel, botón, enlaces) | `--pink` | `#851240` |
+| Rosa hover del botón | vine | `#a01049` |
+| Texto principal (vino) | `--pinksec` | `#4a0e2e` |
+| Texto secundario | `--pinksec` | `#8a6b7a` |
+| Fondo | `--rosepink` | `#fdf4f7` |
 
 ---
 
