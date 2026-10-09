@@ -38,9 +38,9 @@ El enfoque de desarrollo es **mobile first**: primero se diseña la versión mó
 
 ## 2. Demo en vivo
 
-🔗 **GitHub Pages:** https://TU-USUARIO.github.io/login-adminexpress/
+🔗 **GitHub Pages:** https://YueAinhoa.github.io/login-adminexpress/
 
-📂 **Repositorio:** https://github.com/TU-USUARIO/login-adminexpress
+📂 **Repositorio:** https://github.com/YueAinhoa/login-adminexpress
 
 ---
 
