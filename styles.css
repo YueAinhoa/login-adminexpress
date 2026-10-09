@@ -1,0 +1,258 @@
+
+/* =================================
+   1. VARIABLES Y CONFIGURACIÓN
+================================= */
+
+:root {
+    --pink: #851240;
+    --vine: #4a0e2e;
+    --pinksec: #8a6b7a;
+    --rosepink: #fdf4f7;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    color: var(--navy);
+    background: var(--bg);
+}
+
+
+/* =================================
+   2. DISEÑO PARA CELULARES
+================================= */
+
+.login {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
+
+/* Ocultar el panel azul en móvil */
+.brand {
+    display: none;
+}
+
+/* Centrar el formulario */
+.panel {
+    display: grid;
+    place-items: center;
+    padding: 2rem 1.5rem;
+}
+
+/* Limitar el ancho del formulario */
+.box {
+    width: 100%;
+    max-width: 420px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+h2 strong {
+    font-weight: 700;
+}
+
+.subtitle {
+    margin-top: 0.75rem;
+    max-width: 230px;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: var(--gray);
+}
+
+
+/* =================================
+   3. FORMULARIO
+================================= */
+
+form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label {
+    display: none;
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    height: 52px;
+    padding: 0 1rem;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 1px 3px rgba(74, 14, 46, .08);
+}
+
+.control > i {
+    color: var(--gray);
+    flex-shrink: 0;
+}
+
+.control input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    font: inherit;
+    font-size: 0.8rem;
+}
+
+.forgot {
+    align-self: flex-end;
+    margin-top: -0.5rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--pink);
+    text-decoration: none;
+}
+
+.btn {
+    height: 52px;
+    border: none;
+    border-radius: 14px;
+    background: var(--pink);
+    color: #fff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #a01049;
+}
+
+.signup {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--gray);
+}
+
+.signup a {
+    color: var(--pink);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+/* =================================
+   4. DISEÑO PARA COMPUTADORAS
+================================= */
+
+@media (min-width: 768px) {
+
+    .login {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Mostrar el panel azul */
+    .brand {
+        display: grid;
+        place-items: center;
+        background: var(--pink);
+        color: #fff;
+        padding: 2rem;
+    }
+
+    .brand h1 {
+        font-size: clamp(2rem, 4vw, 3.5rem);
+        font-weight: 700;
+    }
+
+    .panel {
+        padding: 3rem;
+    }
+
+    label {
+        display: block;
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
+
+    .subtitle {
+        max-width: 320px;
+        font-size: 0.85rem;
+    }
+
+    .control input {
+        font-size: 0.9rem;
+    }
+
+    .forgot {
+        font-size: 0.8rem;
+    }
+
+    .signup {
+        font-size: 0.85rem;
+    }
+}
+
+
+/* =================================
+   4. TABLET: DESDE 768px
+================================= */
+
+@media (min-width: 768px) {
+
+    .login {
+        grid-template-rows: 220px 1fr;
+    }
+
+    .brand {
+        display: grid;
+        place-items: center;
+        background: var(--pink);
+    }
+
+    .brand h1 {
+        color: #fff;
+        font-size: 2.2rem;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 0.4rem;
+        font-size: 0.72rem;
+        font-weight: 700;
+    }
+
+    .signup {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+  .login {
+    grid-template-columns: 1fr 1fr;  
+    grid-template-rows: 1fr;
+  }
+
+  .btn {
+    width: 150px;              
+    height: 48px;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  h2 { font-size: 1.4rem; }
+  .panel { padding: 1.5rem 1rem; }
+}
